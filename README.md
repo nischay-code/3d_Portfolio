@@ -11,6 +11,7 @@ IMPORTANT:
  * Loading Gltf models into a Three.js scene is a lot of work.
  * each part of our model’s meshes and save them separately.
  * For this model, visit https://gltf.pmnd.rs/
+ * Island 3D model from: https://sketchfab.com/3d-models/foxs-islands-163b68e09fcc47618450150be7785907
  
  Normalize the rotation value to ensure it stays within the range [0, 2 * Math.PI].
 -  The goal is to ensure that the rotation value remains within a specific range to prevent potential issues with very large or negative rotation values.Here's a step-by-step explanation of what this code does:
