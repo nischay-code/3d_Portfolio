@@ -15,12 +15,12 @@ const renderContent = {
   1: (
     <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
       Hi, I am <span className="font-semibold">Nischay</span>👋🏻
-      {/* <br /> A Developer From India */}
+      <br /> A Web and Mobile App Developer
     </h1>
   ),
   2: (
     <InfoBox
-      text="Active Learner and picked up many skills along the way"
+      text="As a Active Learner, I picked up many skills along the way"
       link="/about"
       btnText="Learn More"
     />
