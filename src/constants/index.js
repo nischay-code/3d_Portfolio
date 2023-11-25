@@ -106,50 +106,11 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Web and Mobile Application Developer",
+    company_name: "Hbarve Info Tech",
+    // icon: ICON,
     iconBg: "#accbe1",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#fbc3bc",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#b7e4c7",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#a2d2ff",
-    date: "Jan 2023 - Present",
+    date: "Feb 2022 - Mar 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -181,49 +142,49 @@ export const projects = [
   {
     iconUrl: pricewise,
     theme: "btn-back-red",
-    name: "Amazon Price Tracker",
+    name: "GO Shop",
     description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
+      "An E-Commerce site using Strapi CMS with Strapi's admin panel to manage product listings, including adding, updating, and deleting products",
+    link: "https://github.com/nischay-code/Replica-fk",
   },
   {
     iconUrl: threads,
     theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
+    name: "Fk-Replica",
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
+      "The Replica-fk site aims to recreate the look and functionality of the popular e-commerce platform. Tech stack consists of HTML, CSS, and JavaScript",
+    link: "https://github.com/nischay-code/Replica-fk",
   },
   {
     iconUrl: car,
     theme: "btn-back-blue",
-    name: "Car Finding App",
+    name: "Car Racing",
     description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
+      "A basic car game project to learn about the javascript and CSS concepts that helps to build my skill set and core skill set in web development.",
+    link: "https://github.com/nischay-code/racing_car",
   },
   {
     iconUrl: snapgram,
     theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
+    name: "Realtime Chat App",
     description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
+      "Created a one-to-one chat application to connect with friends in a familiar social media environment using React Native.",
+    link: "https://github.com/nischay-code/ReactNative_ChatApp",
   },
   {
     iconUrl: estate,
     theme: "btn-back-black",
-    name: "Real-Estate Application",
+    name: "ResCure",
     description:
-      "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
+      "Native Application which provide medical ease in advance. It helps to reduce time complexity of a sudden medical situation caused by an accident.",
+    link: "https://github.com/nischay-code/Website_ResCure",
   },
   {
     iconUrl: summiz,
     theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
+    name: "My Other Projects",
     description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
+      "Live 30 Static Websites using HTML, CSS and JS and projects on React and React Native Apps like Food order app, Todo List and many more.",
+    link: "hhttps://github.com/nischay-code?tab=repositories",
   },
 ];
