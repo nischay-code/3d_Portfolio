@@ -30,10 +30,11 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          form_name: form.name,
+          from_name: form.name,
           to_name: "Nischay",
           from_email: form.email,
           to_email: "nischay.patel.code@gmail.com",
+          message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
@@ -49,6 +50,7 @@ const Contact = () => {
           setCurrentAnimation("idle");
           setForm({ name: "", email: "", message: "" });
         }, 3000);
+        console.log(form.name);
       })
       .catch((error) => {
         setIsLoading(false);
