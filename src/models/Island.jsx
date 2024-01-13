@@ -106,11 +106,11 @@ export function Island({
     canvas.addEventListener("pointerdown", handlePointerDown);
     canvas.addEventListener("pointerup", handlePointerUp);
     canvas.addEventListener("pointermove", handlePointerMove);
+    canvas.addEventListener("touchstart", touchstart);
+    canvas.addEventListener("touchmove", touchmove);
+    canvas.addEventListener("touchend", touchend);
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("keyup", handleKeyUp);
-    window.addEventListener("touchstart", touchstart);
-    window.addEventListener("touchmove", touchmove);
-    window.addEventListener("touchend", touchend);
 
     return () => {
       canvas.removeEventListener("pointerdown", handlePointerDown);
