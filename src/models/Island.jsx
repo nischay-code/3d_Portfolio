@@ -74,6 +74,33 @@ export function Island({
     }
   };
 
+  const touchstart = (event) => {
+    event.stopPropagation();
+    setIsRotating(true);
+
+    const clientX = event.touches ? event.touches[0].clientX : event.clientX;
+
+    lastX.current = clientX;
+  };
+  const touchend = (event) => {
+    event.stopPropagation();
+    setIsRotating(false);
+  };
+  const touchmove = (event) => {
+    event.stopPropagation();
+    if (isRotating) {
+      const clientX = event.touches ? event.touches[0].clientX : event.clientX;
+
+      const delta = (clientX - lastX.current) / viewport.width;
+
+      islandRef.current.rotation.y += delta * 0.01 * Math.PI;
+
+      lastX.current = clientX;
+
+      rotationSpeed.current = delta * 0.01 * Math.PI;
+    }
+  };
+
   useEffect(() => {
     const canvas = gl.domElement;
     canvas.addEventListener("pointerdown", handlePointerDown);
@@ -81,15 +108,29 @@ export function Island({
     canvas.addEventListener("pointermove", handlePointerMove);
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("keyup", handleKeyUp);
+    window.addEventListener("touchstart", touchstart);
+    window.addEventListener("touchmove", touchmove);
+    window.addEventListener("touchend", touchend);
 
     return () => {
       canvas.removeEventListener("pointerdown", handlePointerDown);
       canvas.removeEventListener("pointerup", handlePointerUp);
       canvas.removeEventListener("pointermove", handlePointerMove);
+      canvas.removeEventListener("touchstart", touchstart);
+      canvas.removeEventListener("touchmove", touchmove);
+      canvas.removeEventListener("touchend", touchend);
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("keyup", handleKeyUp);
     };
-  }, [gl, handlePointerDown, handlePointerUp, handlePointerMove]);
+  }, [
+    gl,
+    handlePointerDown,
+    handlePointerUp,
+    handlePointerMove,
+    touchstart,
+    touchmove,
+    touchend,
+  ]);
 
   useFrame(() => {
     if (!isRotating) {
