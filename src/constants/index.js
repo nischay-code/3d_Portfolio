@@ -185,6 +185,6 @@ export const projects = [
     name: "My Other Projects",
     description:
       "Live 30 Static Websites using HTML, CSS and JS and projects on React and React Native Apps like Food order app, Todo List and many more.",
-    link: "hhttps://github.com/nischay-code?tab=repositories",
+    link: "https://github.com/nischay-code?tab=repositories",
   },
 ];
