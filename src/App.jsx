@@ -1,11 +1,9 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Home, About, Projects, Contact } from "./pages";
-import PreLoader from "./components/PreLoader";
 const App = () => {
   return (
     <>
-      <PreLoader />
       <main className="bg-slate-300/20 h-full">
         <Router>
           <Navbar />
