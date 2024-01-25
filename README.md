@@ -45,9 +45,9 @@ Create an amazing 3D developer portfolio using React and Three.js. This template
 Create a `.env` file in the root of your project and add the following variables:
 
 ```env
-VITE_APP_EMAILJS_SERVICE_ID='SECRET_KEY',
-VITE_APP_EMAILJS_TEMPLATE_ID='SECRET_KEY',
-VITE_APP_EMAILJS_PUBLIC_KEY='SECRET_KEY'
+VITE_APP_EMAILJS_SERVICE_ID
+VITE_APP_EMAILJS_TEMPLATE_ID
+VITE_APP_EMAILJS_PUBLIC_KEY
 ```
 
 ### Prerequisites
